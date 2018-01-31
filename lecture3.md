@@ -2,8 +2,9 @@
 ## How to write to a file?
   - You can use the print writer `import java.io.FileWriter;`
     `FileWriter fw = new FileWriter("exampleFileout.txt, true");`
+
       > The true means we want it to append. If no file is there it will create
-        the file.
+      the file.
 
     `PrintWriter outfile = newPrintWrite(fw)`
     `outFIle.println("...");`
@@ -11,7 +12,7 @@
 
 ## How to read from a file?
  `File reader fr = new FileReader("myfile.txt");`
- `Scanner inFile = new Scanner(fr)`;
+ `Scanner inFile = new Scanner(fr);`
  `String line = inFile.nextLine();`
  `String[] words = line.split(" ");`
   > This will split the words in the string so you can grab words by index
@@ -28,7 +29,9 @@
     `java.io.serializable` needs to be imported.
     All the fields in the object class must be serializable in order to write it
     to a sterilized file.
+
     `FileInputStream fis = new FileInputStream(myFile.ser);`
+
     `FileOutputStream ous = new FileOutputStream(fis);`
 
 ## Common Errors?
@@ -41,7 +44,20 @@
  -  uninitialized references like `String name;` that are not primitive
     data types will throw an exception when referenced because they unlike primitive
     data types are not assigned a default value
+
 ## Exceptions
-  - *CHECKED exception* is a type of exception that must be either
+ - *CHECKED exception* is a type of exception that must be either
     caught or declared in the method in which it is thrown.
-  - *UNCHECKED exception* exceptions under Error and RuntimeException classes.
+ - *UNCHECKED exception* exceptions under Error and RuntimeException classes.
+
+## Throws key word.
+  - you can throw an exception with the throw keyword
+  > The keyword lets the programmer at the higher level what the cause of their error is. Then the programmer can handle that exception in the way that they want.
+
+## Try, Catch , Finally
+  - Try block executes first and **tries** to run the code.
+  - Catch block catches what ever exception is thrown. After you catch the exception you can decide the way that you will handle it.
+  - Finally block is a block that is used to execute important code such as closing connection, stream etc.
+  > Java finally block is always executed whether exception is handled or not.
+
+  
