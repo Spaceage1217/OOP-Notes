@@ -1,4 +1,4 @@
-# lecture 3
+# lecture 3!!!
 ## How to write to a file?
   - You can use the print writer `import java.io.FileWriter;`
     `FileWriter fw = new FileWriter("exampleFileout.txt, true");`
