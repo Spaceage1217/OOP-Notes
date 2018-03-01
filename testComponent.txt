@@ -5,4 +5,3 @@ CS4318: Program Translators, SP '08-'15
 CS5331: Crafting Compilers, SP '08-'15
 CS4350: Unix Systems Programming, SP '08, FA '10-'12
 MC4382T: Coding and Data Skills for Communicators FA '14
-new line here
